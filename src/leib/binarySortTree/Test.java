@@ -1,7 +1,5 @@
 package leib.binarySortTree;
 
-import leib.binaryTree.BinaryTree;
-
 /**
  * @Author:Leib
  * @Date 2020/4/17 13:33

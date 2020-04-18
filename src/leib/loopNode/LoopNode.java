@@ -8,7 +8,8 @@ import javax.sound.midi.SoundbankResource;
  */
 public class LoopNode {
     int data ;
-    LoopNode next = this;
+    LoopNode next ;
+    //= this  加上就变成循环链表了
 
     public LoopNode(int data){
         this.data= data;
