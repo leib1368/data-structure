@@ -1,4 +1,4 @@
-package leib.leedcode;
+package leib.leetcode;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,7 +7,7 @@ import java.util.Map;
  * @Author:Leib
  * @Date 2020/4/16 11:51
  */
-public class LeedcodeTest01 {
+public class LeetcodeTest01 {
     public static void main(String[] args) {
         //System.out.println(compressString("aabcccccaaa"));
         System.out.println(compressStringMap("aabcccccaaa"));

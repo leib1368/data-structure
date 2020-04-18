@@ -1,4 +1,4 @@
-package leib.leedcode;
+package leib.leetcode;
 
 import java.util.HashMap;
 import java.util.Map;

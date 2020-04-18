@@ -1,5 +1,6 @@
 package leib.huffman;
 
+import java.math.BigInteger;
 import java.util.*;
 
 /**
@@ -8,10 +9,13 @@ import java.util.*;
  */
 public class HuffmanCode {
     public static void main(String[] args) {
-        //传递信息
+        //传递的原信息
         String msg = "can you can a can as a can canner can a can.";
         //转换成字节数组 内部是ascii形式
         byte [] translateData =msg.getBytes();
+        //转换成2进制 和题目无关
+        System.out.println("2进制："   + binary(translateData, 2));
+
         //进行赫夫曼编码
         byte [] translateDataZIP = huffmanZIP(translateData);
 
@@ -19,11 +23,19 @@ public class HuffmanCode {
         System.out.println("压缩前长度："+translateData.length);
         System.out.println("压缩后长度："+translateDataZIP.length);
 
+        //开始解码
         byte[] newBytes = decode(huffCodes,translateDataZIP);
+
+        //验证解码前和解码后的数组
         System.out.println(Arrays.toString(translateData));
         System.out.println(Arrays.toString(newBytes));
 
         System.out.println(new String(newBytes));
+    }
+
+    public static String binary(byte[] bytes, int radix){
+        return new BigInteger(1, bytes).toString(radix);
+        // 这里的1代表正数
     }
 
     private static byte[] decode(Map<Byte, String> huffCodes, byte[] bytes) {
@@ -127,6 +139,7 @@ public class HuffmanCode {
                 byteZIP[index] = byt;
                 index++;
         }
+        //返回字节数组
         return byteZIP;
     }
 
@@ -176,8 +189,9 @@ public class HuffmanCode {
     }
 
     /*
-    * 将传入的字节数组每个字节转换成 Code-->节点
+    * 将传入的字节数组每个字节以及出现次数 转换成 Code-->节点
     */
+
     private static List<Code> getCodes(byte[] translateData) {
     //将byte数组转换为Code集合
         List<Code> Codes =new ArrayList<>();
