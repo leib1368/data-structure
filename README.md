@@ -1,6 +1,4 @@
 # data-structure
 Think less Do more   
-#0414  
-循环链表  
-#0416  
-赫夫曼树
+# 记录常用数据结构与一些概念
+just do it
