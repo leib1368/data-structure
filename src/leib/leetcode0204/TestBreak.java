@@ -1,4 +1,4 @@
-package leib.leetcode;
+package leib.leetcode0204;
 
 public class TestBreak {
 
