@@ -1,4 +1,4 @@
-package leib.demo.juc;
+package leib.demo.juc.thread;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;

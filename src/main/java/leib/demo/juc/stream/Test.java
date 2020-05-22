@@ -1,6 +1,5 @@
-package leib.demo.juc.steam;
+package leib.demo.juc.stream;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 

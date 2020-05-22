@@ -1,4 +1,4 @@
-package leib.demo.juc;
+package leib.demo.juc.thread;
 
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;

@@ -1,4 +1,4 @@
-package leib.demo.juc.steam;
+package leib.demo.juc.stream;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

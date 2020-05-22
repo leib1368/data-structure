@@ -1,4 +1,4 @@
-package leib.demo.juc;
+package leib.demo.juc.function;
 
 import java.util.function.Function;
 

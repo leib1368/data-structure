@@ -1,4 +1,4 @@
-package leib.demo.juc;
+package leib.demo.juc.collections;
 
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;

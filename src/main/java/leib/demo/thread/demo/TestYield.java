@@ -16,7 +16,7 @@ class MyYield implements Runnable{
     @Override
     public void run() {
         System.out.println(Thread.currentThread().getName()+"开始");
-        Thread.yield();
+        //Thread.yield();
         System.out.println(Thread.currentThread().getName()+"结束");
     }
 }
