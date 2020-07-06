@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * @Author:Leib
  * @Date 2020/7/1 20:35
  */
-public class t0701 {
+public class T0701 {
     public static void main(String [] args)
     {
         ArrayList<String> al=new ArrayList<String>();
