@@ -33,11 +33,11 @@ public class TestBinaryTree {
         TreeNode rightRightNode = new TreeNode(7);*/
 
         //前序遍历
-/*        binaryTree.frontShow();
+        binaryTree.frontShow();
         binaryTree.MidShow();
         binaryTree.AfterShow();
         TreeNode result = binaryTree.frontSearsh(5);
-        System.out.println(result);*/
+        System.out.println(result);
 
         binaryTree.frontShow();
         binaryTree.delete(5);
