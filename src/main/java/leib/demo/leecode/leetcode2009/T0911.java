@@ -15,7 +15,7 @@ import java.util.Queue;
 public class T0911 {
     public static void main(String[] args) {
         T0911 t0911 = new T0911();
-        int [] list = {10,-3,0,5,9};
+        int [] list = {-10,-3,0,5,9};
         TreeNode treeNode = t0911.sortedArrayToBST(list);
 
         t0911.binaryTreePaths(treeNode);
