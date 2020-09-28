@@ -17,7 +17,13 @@ public class T0924_2 {
 //        t0924.listInOrderTraversal(list);
 //        Arrays.toString(list);
 
-        t0924.isBalanced(treeNode);
+        t0924.traverse(treeNode);
+    }
+    void traverse(TreeNode root) {
+        if (root == null) return;
+        traverse(root.left);
+        System.out.println(root.val);
+        traverse(root.right);
     }
     public boolean isBalanced(TreeNode root) {
         if (root == null)
