@@ -11,7 +11,57 @@ public class T1011 {
     public static void main(String[] args) {
         T1011 t1011 = new T1011();
         int[] list = {1,2,5};
-        System.out.println(t1011.coinChange(list, 11));
+       // System.out.println(t1011.coinChange(list, 11));
+        ListNode l1= new ListNode(1);
+        ListNode l2= new ListNode(2);
+        ListNode l3= new ListNode(3);
+        ListNode l4= new ListNode(4);
+        ListNode l5= new ListNode(5);
+        l1.next = l2;
+        l2.next = l3;
+        l3.next = l4;
+        l4.next = l5;
+        t1011.swapPairs1(l1);
+    }
+    public ListNode swapPairs1(ListNode head) {
+        if (head ==null || head.next==null) return  head;
+        ListNode p1 = head;
+        ListNode p2 = head.next;
+        ListNode newHead = p2;
+        while (true){
+            p1.next = p2.next;
+            p2.next = p1;
+            if (p1.next==null || p1.next.next==null) break;
+            ListNode temp = p1.next ;
+            p1.next = p1.next.next;
+            p1 = temp ;
+            p2 = temp.next;
+        }
+        return newHead;
+    }
+    public ListNode swapPairs(ListNode head) {
+        // 最多就 1 个节点，无需交换
+        if (head == null || head.next == null) {
+            return head;
+        }
+        // 至少两个结点
+        ListNode p1 = head, p2 = head.next;
+        ListNode newhead = p2;  // 交换后，它就是最终链表的第一个元素
+        while (true) {
+            // 两两交换
+            p1.next = p2.next;
+            p2.next = p1;
+            // 如果后面没有两个以上的节点，停止交换
+            if (p1.next == null || p1.next.next == null) {
+                break;
+            }
+            // 否则还要继续交换
+            ListNode temp = p1.next;    //  记录一下，否则执行“串起来”后无法让p1,p2指向两个新的待交换节点
+            p1.next = p1.next.next;     // “串起来”
+            p1 = temp;                  //  分别指向两个
+            p2 = temp.next;             //  新的待交换节点
+        }
+        return newhead;
     }
 
     public int coinChange(int[] coins, int amount) {

@@ -7,11 +7,11 @@ import java.util.List;
  * @Author:Leib
  * @Date 2020/10/5 13:46
  */
-class ListNode {
-     int val;
-     ListNode next;
-     ListNode(int x) { val = x; }
- }
+//class ListNode {
+//     int val;
+//     ListNode next;
+//     ListNode(int x) { val = x; }
+// }
 public class T1005_2 {
     public static void main(String[] args) {
         //第二种方法设计翻转链表与双指针 因此记录一下
