@@ -8,7 +8,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * @Author:Leib
  * @Date 2020/5/20 13:00
  */
-public class MapTest {
+public class MapTest1 {
     public static void main(String[] args) {
         //容量与默认加载因子
         //Map<String,String> map = new HashMap<>(16,0.75);
