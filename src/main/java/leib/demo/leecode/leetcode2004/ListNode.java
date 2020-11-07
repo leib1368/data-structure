@@ -5,7 +5,8 @@ package leib.demo.leecode.leetcode2004;
  * @Date 2020/4/23 13:19
  */
 public class ListNode {
-    ListNode next ;
+    public ListNode next ;
     int val ;
-    ListNode(int x) { val = x; }
+    public ListNode(int x) { val = x; }
+    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }
