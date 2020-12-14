@@ -6,7 +6,7 @@ package leib.demo.leecode.leetcode2012;
  */
 public class T1214 {
     public static void main(String[] args) {
-        System.out.println("21点47分");
-        System.out.println("this is master");
+        System.out.println("21点56分");
+        System.out.println("this is nbcb");
     }
 }
