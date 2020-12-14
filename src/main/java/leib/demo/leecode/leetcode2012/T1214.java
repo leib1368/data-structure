@@ -6,10 +6,7 @@ package leib.demo.leecode.leetcode2012;
  */
 public class T1214 {
     public static void main(String[] args) {
-        System.out.println("this is for master branch ");
-        System.out.println("--------------------------");
-        System.out.println("this is for nbcb-01 ");
-
-        System.out.println("21点42分");
+        System.out.println("21点47分");
+        System.out.println("this is master");
     }
 }
