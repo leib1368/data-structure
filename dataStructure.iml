@@ -115,5 +115,6 @@
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.68" level="project" />
     <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.7" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.9" level="project" />
+    <orderEntry type="library" name="Maven: org.jetbrains:annotations:18.0.0" level="project" />
   </component>
 </module>
